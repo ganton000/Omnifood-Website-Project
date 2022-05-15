@@ -16,7 +16,7 @@ Default: 1
 Default-small: 1.05
 Medium: 1.2
 Paragraph-defualt: 1.6
-
+Large: 1.8
 
 LETTER SPACING:
 -0.5px
@@ -64,6 +64,7 @@ Medium: 11px
 html {
     /* 10px/16px = .625 */
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -71,6 +72,9 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+
+    /* Only works if there is nothing absolutely positioned in relation to body */
+    overflow-x: hidden;
 }
 
 /* GENERAL REUSABLE COMPONENTS */
@@ -236,6 +240,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    line-height: 1.2;
 }
 
 .list-icon {
